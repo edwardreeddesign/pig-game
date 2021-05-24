@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="main.js" defer></script>
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <div class="game-title">
+      <h1 class="title">PIG GAME</h1>
+    </div>
+    <main>
+      <div class="game-play">
+        <section class="player player--0 player--active">
+          <div class="player-title">
+            <h1 class="name--1" id="name--0">Player 1</h1>
+          </div>
+          <div class="score">
+            <p class="total-score" id="score--0">23</p>
+          </div>
+          <div class="current">
+            <p class="score-current">Current score</p>
+            <p class="current-score" id="current--0">4</p>
+          </div>
+        </section>
+        <div class="btns">
+          <button class="btn btn-new">New Game</button>
+          <img src="" alt="Playing Dice Image" class="dice" />
+          <button class="btn btn-roll">Roll Dice</button>
+          <button class="btn btn-hold">Hold</button>
+        </div>
+        <section class="player player--1">
+          <div class="player-title">
+            <h1 class="name--2" id="name--1">Player 2</h1>
+          </div>
+          <div class="score">
+            <p class="total-score" id="score--1">59</p>
+          </div>
+          <div class="current">
+            <p class="score-current">Current score</p>
+            <p class="current-score" id="current--1">0</p>
+          </div>
+        </section>
+      </div>
+      <button class="show-modal">Rules</button>
+      <div class="overlay hidden">
+        <div class="rules hidden">
+          <button class="close-modal">X</button>
+          <p class="game-rules">
+            Each turn, a player repeatedly rolls a die until either a 1 is
+            rolled or the player decides to "hold": If the player rolls a 1,
+            they score nothing and it becomes the next player's turn. If the
+            player rolls any other number, it is added to their turn total and
+            the player's turn continues.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="copyright">
+        <p>&copy 2021 Edward Reed Designs</p>
+        <a href="#" class="websiteLink"
+          ><img src="/Hero-logo.svg" alt="Edward Reed Designs Logo"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
